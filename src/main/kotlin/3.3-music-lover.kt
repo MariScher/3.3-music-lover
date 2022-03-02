@@ -13,7 +13,7 @@ fun main() {
     else if (totalPrice > discountStart) totalPrice - standardDiscount
     else totalPrice
 
-    val totalResult = if (monthlyBuyer) (result * monthlyDiscount).toInt() else result
+    val totalResult = if (monthlyBuyer) (result * monthlyDiscount * 100).toInt() else result * 100
 
     println("Итого: $totalResult")
 }
